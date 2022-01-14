@@ -5,10 +5,9 @@
 }
 
 body{
-  background-image: url("background.jpg");
   background-size: cover;
   background-position: center;
-  
+  background-image: url("");
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
