@@ -11,24 +11,39 @@ body{
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.menu-bar{
+.menu-bar{ 
+  justify-content: flex-start;
   background: rgba(0,100,0);
-  text-align: center;
+  .fa-angle-right: center;
+  align-items: center;
 }
 
 .menu-bar ul{
-  display: inline-flex;
+  display: flex;
+  flex-wrap: wrap;
   list-style: none;
-  color: #fff;
+  color: #fff;  
 }
 
 .menu-bar ul li{
+  flex:none;
   width: 120px;
   margin: 15px;
   padding: 15px;
 }
+/*
+@media(max-width:1200px){
+  .menu-bar ul li{
+  width:45%;
+} 
 
+@media(max-width:500px){
+  .menu-bar ul li{
+  width:90%;
+} 
+*/
 .menu-bar ul li a{
+  flex:none;
   text-decoration: none;
   color: #fff;
 }
