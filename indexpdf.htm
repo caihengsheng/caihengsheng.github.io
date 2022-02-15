@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="author" content="Simon Cai" />
+	<meta name="keywords" content="html,我的PDF文件1" />
+	<meta name="viewpoint" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+	<title>老蔡PDF网页</title>
+	<!--网页标题左侧显示-->
+	<link rel="icon" href="C.ico" type="image/x-icon">
+	<!--收藏夹显示图标-->
+	<link rel="shortcut icon" href="C.ico" type="image/x-icon">
+	<!--引入外部CSS档案-->
+	<link rel="stylesheet" href="style.css" />
+	<script type="text/javascript">
+	function getData(pageName){
+		//Ajax:XMLHttpRequest 物件专门用来和伺服器做连线
+		var req=new XMLHttpRequest();
+		req.open("get", "https://caih1943.github.io/"+pageName);
+		req.onload=function(){    //load 事件，侦测连线的状态结束
+			//连线完成，做连线的处理
+			var content1=document.getElementById("content1");
+			content1.innerHTML=this.responseText;
+		};
+		req.send(); // 送出连线
+	}
+	</script>
+	
+<style>
+	.container{padding:30px;}
+</style>
+
+</head>
+
+<body>
+	<h1>老蔡的PDF文件页1！</h1>
+
+	<div class="container">
+		<embed type="application/pdf" src="竺可桢校长和浙江大学.pdf" style="width:100%;height:1200px">
+	</div>	
+</body>
+</html>
