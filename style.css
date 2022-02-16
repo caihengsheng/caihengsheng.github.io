@@ -12,8 +12,12 @@ body{
 }
 
 h1{
-  border-radius: 10px;background-color:#003344;color:white;font-weight: bold;font-size: 30px;text-align: center;padding:10px;margin:0px;
+  border-radius: 10px;background-color:#003344; color:white;
+  font-weight: bold;font-size: 30px;
+  text-align: center;
+  padding:10px; margin:0px;
 }
+
 .logo_container h1{
   color: white;
   height: 100%;
