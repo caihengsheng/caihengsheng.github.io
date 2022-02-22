@@ -13,8 +13,8 @@
   justify-content: center;
 }
 .card{
-  width:190px;
-  perspective: 500px;
+  width:380px;
+  perspective: 1000px;
   cursor:pointer;
 }
 .card-inner{
@@ -52,8 +52,8 @@
   font-weight: 600;
 }
 .back-face p{
-  font-size: 13px;
-  font-weight: 300;
+  font-size: 26px;
+  font-weight: 600;
 }
 .social-media i{
   color: #fff;
