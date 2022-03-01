@@ -9,8 +9,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="icon" href="C.ico" type="image/x-icon">
   <link rel="shortcut icon" href="C.ico" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/f4ff6de45d.js" crossorigin="anonymous"></script>
 </head>
 <body>
+  
   <div class="menu-bar">
     <div class="logo_container">
       <h1>老蔡网站</h1>
@@ -353,13 +355,65 @@
       </li>
     </ul>
   </div>
-
+  
   <div class="img">
+    <div class="navigation">
+      <div class="menuToggle"></div>
+      <ul>
+        <li class="list active" style="--clr:#f44336;">
+          <a href="https://www.msn.com/en-ca/" target="_blank">
+            <span class="icon"><ion-icon name="chatbox-outline"></ion-icon>
+            </span>
+            <span class="text">MSN CA</span>
+          </a>
+        </li> 
+        <li class="list" style="--clr:#d2f1ad;">
+          <a href="https://www.msn.cn/zh-cn" target="_blank">
+            <span class="icon"><ion-icon name="chatbubble-outline"></ion-icon></span>
+            <span class="text">MSN ZH</span>
+          </a>
+        </li>  
+        <li class="list"style="--clr:#2196f3;">
+          <a href="https://pixabay.com/zh/images/search/%E6%B8%A5%E5%A4%AA%E5%8D%8E/" target="_blank">
+            <span class="icon"><ion-icon name="camera-outline"></ion-icon></span>
+            <span class="text">照片</span>
+          </a>
+        </li>  
+        <li class="list" style="--clr:#b145e9;">
+          <a href="https://drive.google.com/file/d/0B33wrnuJFvjMLWhqSGU1VFhCU00/view?usp=sharing&resourcekey=0-kBPnIxsHMFZQNMz4lIJShw" target="_blank">
+            <span class="icon"><ion-icon name="book-outline"></ion-icon></span>
+            <span class="text">Estrellita by Joshua Bell</span>
+          </a>
+        </li>
+        <li class="list" style="--clr:#ffa117;">
+          <a href="#">
+            <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+            <span class="text">关于</span>
+          </a>
+        </li> 
+      </ul>
+    </div>
     <img src="1-4.jpg" alt="Calendar logo">
     <img src="5-8.png" alt="Calendar1 logo">  
     <img src="9-12.jpg" alt="Calendar2 logo">     
   </div>
-  
+
+  <script>
+    const menuToggle = document.querySelector('.menuToggle');
+    const navigation = document.querySelector('.navigation');
+    menuToggle.onclick = function(){
+      navigation.classList.toggle('open');
+    }
+
+    const list = document.querySelectorAll('.list');
+    function activeLink(){
+      list.forEach((item) => item.classList.remove('active'));
+      this.classList.add('active');
+    }
+    list.forEach((item) =>item.addEventListener('click',activeLink))
+  </script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </div>
 </body>
 </html>
