@@ -10,13 +10,23 @@
   <link rel="icon" href="C.ico" type="image/x-icon">
   <link rel="shortcut icon" href="C.ico" type="image/x-icon">
   <script src="https://kit.fontawesome.com/f4ff6de45d.js" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    function getDa(pageName){
+      var req=new XMLHttpRequest();
+      req.openload=function(){
+        var context1=document.getElementById("content1");
+        context1.innerHTML=this.responseText;
+      };
+      req.send();
+    }
+  </script>
 </head>
 <body>
-  
   <div class="menu-bar">
+    <span style="font-size:25px;color:yellow;text-align:left;cursor:pointer" onclick="openNav()"> &#9776;    
+    </span>  
     <div class="logo_container">
       <h1>老蔡网站</h1>
-    </div>
     <ul>
       <li class="active"><a href="#"><i class="fa fa-home"></i>主页</a>
         <div class="sub-menu-1">
@@ -356,62 +366,30 @@
     </ul>
   </div>
   
-  <div class="img">
-    <div class="navigation">
-      <div class="menuToggle"></div>
-      <ul>
-        <li class="list active" style="--clr:#f44336;">
-          <a href="https://www.msn.com/en-ca/" target="_blank">
-            <span class="icon"><ion-icon name="chatbox-outline"></ion-icon>
-            </span>
-            <span class="text">MSN CA</span>
-          </a>
-        </li> 
-        <li class="list" style="--clr:#d2f1ad;">
-          <a href="https://www.msn.cn/zh-cn" target="_blank">
-            <span class="icon"><ion-icon name="chatbubble-outline"></ion-icon></span>
-            <span class="text">MSN ZH</span>
-          </a>
-        </li>  
-        <li class="list"style="--clr:#2196f3;">
-          <a href="https://pixabay.com/zh/images/search/%E6%B8%A5%E5%A4%AA%E5%8D%8E/" target="_blank">
-            <span class="icon"><ion-icon name="camera-outline"></ion-icon></span>
-            <span class="text">照片</span>
-          </a>
-        </li>  
-        <li class="list" style="--clr:#b145e9;">
-          <a href="https://drive.google.com/file/d/0B33wrnuJFvjMLWhqSGU1VFhCU00/view?usp=sharing&resourcekey=0-kBPnIxsHMFZQNMz4lIJShw" target="_blank">
-            <span class="icon"><ion-icon name="book-outline"></ion-icon></span>
-            <span class="text">Estrellita by Joshua Bell</span>
-          </a>
-        </li>
-        <li class="list" style="--clr:#ffa117;">
-          <a href="#">
-            <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
-            <span class="text">关于</span>
-          </a>
-        </li> 
-      </ul>
-    </div>
-    <img src="1-4.jpg" alt="Calendar logo">
-    <img src="5-8.png" alt="Calendar1 logo">  
-    <img src="9-12.jpg" alt="Calendar2 logo">     
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="https://ici.radio-canada.ca/rci/zh-hans/%E6%9C%80%E6%96%B0%E4%BF%A1%E6%81%AF" target="_blank"><i class="fa-regular fa-message"></i></i>&nbsp;最新信息</a><a href="https://www.bilibili.com/video/BV1DL411H7SV/" target="_blank"><i class="fa-brands fa-html5"></i>&nbsp;网页编程</a>
+    <a href="https://www.runoob.com/python/python-tutorial.html" target="_blank"><i class="fa-brands fa-python"></i>&nbsp;Python</a>
+    <a href="https://www.runoob.com/sql/sql-tutorial.html" target="_blank"><i class="fa-solid fa-database"></i>&nbsp;SQL</a>    
+    <a href="#"><i class="fas fa-address-card"></i>&nbsp;联系我们</a>
   </div>
-
+  
+    <img src="1-4.jpg" alt="Calendar2 logo">
+    <img src="5-8.png" alt="Calendar1 logo">  
+    <img src="9-12.jpg" alt="Calendar2 logo">      
+  </div>
   <script>
-    const menuToggle = document.querySelector('.menuToggle');
-    const navigation = document.querySelector('.navigation');
-    menuToggle.onclick = function(){
-      navigation.classList.toggle('open');
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      backgroundColor="rgba(0,0,0,0,9)";
     }
-
-    const list = document.querySelectorAll('.list');
-    function activeLink(){
-      list.forEach((item) => item.classList.remove('active'));
-      this.classList.add('active');
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.body.style.backgroundColor = "white";
     }
-    list.forEach((item) =>item.addEventListener('click',activeLink))
-  </script>
+    </script>
+  
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </div>
