@@ -22,7 +22,13 @@ body{
   background-image: url("");
   font-family: Georgia, 'Times New Roman', Times, serif;*/
 }
-
+.menu-bar a{
+  display: inline-block;
+  color: yellow;
+  padding: 16px;
+  text-decoration: none;
+  text-align:justify;
+}
 .sidenav {
   height: 100%;
   width: 0;
