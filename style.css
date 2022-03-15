@@ -88,10 +88,11 @@ h1{
   justify-content: flex-start;
   background: rgba(0,100,0);
 }
-
+/*
 .fa-angle-right{
-  align-items: center;
-}
+  padding: 16px;
+  align-items:center;
+} */
 
 .menu-bar ul{
   display: flex;
@@ -137,7 +138,7 @@ h1{
   position: absolute;
   background: rgb(0,100,0);
   margin-top: 15px;
-  margin-left: -15px;
+  margin-left: -10px;
 }
 
 .menu-bar ul li:hover .sub-menu-1 ul{
@@ -152,7 +153,7 @@ h1{
 
 .menu-bar ul li:hover .sub-menu-1 ul li{
   width: 150px;
-  padding: 10px;
+  padding: 0px;
   border-bottom: 1px dotted #fff;
   background: transparent;
   border-radius: 0;
@@ -168,7 +169,8 @@ h1{
 }
 
 .fa-angle-right{
-  float: right;
+  padding: 16px;
+  padding-top:0;
 }
 
 .sub-menu-2{
