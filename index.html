@@ -7,6 +7,9 @@
   <title>Drop-down Menu Design</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
   <link rel="icon" href="C.ico" type="image/x-icon">
   <link rel="shortcut icon" href="C.ico" type="image/x-icon">
   <script src="https://kit.fontawesome.com/f4ff6de45d.js" crossorigin="anonymous"></script>
@@ -382,10 +385,34 @@
   </div>
   
   <div class="container">
+
     <h1>Pictures of Ottawa </h1>
-  <picture>  
-    <img src="ottawa.png" alt="ottawa logo">
-  </picture>
+    <picture> 
+      <img src="ottawa.png" alt="ottawa logo">
+    </picture>
+    <div class="swiper">
+
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="ny1.jpg"</div></div>
+        <div class="swiper-slide"><img src="ny2.jpg"</div></div>
+        <div class="swiper-slide"><img src="ny3.jpg"</div></div>
+        <div class="swiper-slide"><img src="ny4.jpg"</div></div>
+        <div class="swiper-slide"><img src="ny5.jpg"</div></div>
+        <div class="swiper-slide"><img src="ny6.jpg"</div></div>
+        <div class="swiper-slide"><img src="ny7.jpg"</div></div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+    
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>  
+ 
+   
+
   </div>
   <script>
     function openNav() {
@@ -401,6 +428,31 @@
   
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      autoplay:{
+        delay:3000,
+        disableOnInteraction: false,
+      },
+        // Optional parameters
+
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable:true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+});
+  </script>
 </div>
 </body>
 </html>
