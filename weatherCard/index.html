@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Card UI</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/f4ff6de45d.js" crossorigin="anonymous"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script type="text/javascript">$(document).ready(function(){
+    $('.more').click(function(){
+      $('.back').addClass('active')
+      $('.front').removeClass('active')
+    })
+    $('.go-back').click(function(){
+      $('.back').removeClass('active')
+      $('.front').addClass('active')
+    })
+  })</script>
+</head>
+<body>
+  <div class="card">
+    <div class="front active">
+      <div class="location">Ottawa
+      </div>
+      <div class="more"><i class="fa-solid fa-circle-info"></i></div>
+      <div class="weather">
+      <i class="fa fa-cloud" aria-hidden="true"></i>
+      <h1>8<sup>o</sup><br><span>Today</span></h1>
+      </div>
+
+      <ul class="forecast">
+        <li>
+          <div class="day">Sunday</div>
+          <div class="temprature"><i class="fa fa-cloud" aria-hidden="true"></i> 9<sup>o</sup></div>
+        </li>
+        <li>
+          <div class="day">Monday</div>
+          <div class="temprature"><i class="fa fa-tint" aria-hidden="true"></i> 6<sup>o</sup></div>
+        </li>
+        <li>
+          <div class="day">Sunday</div>
+          <div class="temprature"><i class="fa-solid fa-snowflake"></i> 2<sup>o</sup></div>
+        </li>
+      </ul>
+    </div>
+        <div class="back">
+          <div class="go-back"></go-back><i class="fa fa-chevron-circle-left" aria-hidden="true"></i> </div>
+
+        <ul class="forecast">
+        <li>
+          <div class="day">Yesterday</div>
+          <div class="temprature"><i class="fa-solid fa-snowflake"></i> 3<sup>o</sup></div>
+        </li>
+        <li>
+          <div class="day">Today</div>
+          <div class="temprature"><i class="fa fa-cloud" aria-hidden="true"></i> 8<sup>o</sup></div>
+        </li>
+        <li>
+          <div class="day">Tommorrow</div>
+          <div class="temprature"><i class="fa fa-tint" aria-hidden="true"></i></i> 6<sup>o</sup></div>
+        </li>
+        <li>
+          <div class="day">Sunday</div>
+          <div class="temprature"><i class="fa-solid fa-snowflake"></i> 2<sup>o</sup></div>
+        </li>
+        <li>
+          <div class="day">Monday</div>
+          <div class="temprature"><i class="fa fa-tint" aria-hidden="true"></i></i> 6<sup>o</sup></div>
+        </li>
+        <li>
+          <div class="day">Tuesday</div>
+          <div class="temprature"><i class="fa fa-snowflake" aria-hidden="true"></i></i> 2<sup>o</sup></div>
+        </li>
+        <li>
+          <div class="day">Wednesday</div>
+          <div class="temprature"><i class="fa fa-tint" aria-hidden="true"></i></i> 4<sup>o</sup></div>
+        </li>
+      </ul>
+   </div>
+  </div>
+   <div class="back">
+    <div class="go-back"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></div>
+  </div>
+</div>
+</body>
+</html>
