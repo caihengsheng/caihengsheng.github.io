@@ -89,6 +89,7 @@ h1{
 .menu-bar{ 
   justify-content: flex-start;
   background: rgba(0,100,0);
+  border-bottom: 1px solid #fff;
 }
 /*
 .fa-angle-right{
@@ -134,6 +135,7 @@ h1{
 .sub-menu-1{
   display: none;
   z-index: 30;
+  
 }
 
 .menu-bar ul li:hover .sub-menu-1{
@@ -142,6 +144,8 @@ h1{
   background: rgb(0,100,0);
   margin-top: 15px;
   margin-left: -10px;
+  border-top: 1px dotted #fff;
+  border-bottom: 1px dotted #fff;
 }
 
 .menu-bar ul li:hover .sub-menu-1 ul{
@@ -179,6 +183,7 @@ h1{
 .sub-menu-2{
   display: none;
   z-index: 30;
+  border-bottom: 1px dotted #fff;
 }
 
 .hover-me:hover .sub-menu-2{
@@ -187,6 +192,7 @@ h1{
   margin-top: -40px;
   margin-left: 140px;
   background: rgba(0,100,0);
+  border-top: 1px dotted #fff;
 }
 
 .container{
