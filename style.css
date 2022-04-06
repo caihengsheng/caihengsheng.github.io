@@ -134,8 +134,16 @@ h1{
 
 .sub-menu-1{
   display: none;
-  z-index: 30;
-  
+  z-index: 30;  
+}
+
+.sub-menu-1 ul li a{
+  flex:none;
+  width: 140px;
+  margin-left: -80px;
+  padding: 15px 5px 15px 15px;
+  border-bottom: 1px dotted #fff;
+  border-top: 1px dotted #fff; 
 }
 
 .menu-bar ul li:hover .sub-menu-1{
@@ -151,14 +159,14 @@ h1{
 .menu-bar ul li:hover .sub-menu-1 ul{
   display: block;
   margin: 10px;
-  border-top: 1px dotted #fff;
-  border-bottom: 1px dotted #fff;
+  /*border-top: 1px dotted #fff;
+  border-bottom: 1px dotted #fff;*/
 }
 
 .menu-bar ul li:hover .sub-menu-1 ul li{
   width: 150px;
   padding: 0px;
-  border-bottom: 1px dotted #fff;
+  /*border-bottom: 1px dotted #fff; */ 
   background: transparent;
   border-radius: 0;
   text-align: left;
@@ -179,8 +187,18 @@ h1{
 
 .sub-menu-2{
   display: none;
-  z-index: 30;
+  z-index: 150;
+}
 
+.sub-menu-2 ul li a{
+  flex:none;
+  width: 400px;
+  margin-left: -120px;
+  padding: 15px 5px 15px 15px;
+  border-bottom: 1px dotted #fff;
+  border-top: 1px dotted #fff;
+  background: rgb(0,100,0);
+   
 }
 
 .hover-me:hover .sub-menu-2{
@@ -189,7 +207,10 @@ h1{
   margin-top: -40px;
   margin-left: 140px;
   background: rgba(0,100,0);
+}
 
+.hover-me:hover .sub-menu-2 ul li a:hover{
+  color:#b2ff00;
 }
 
 .container{
@@ -259,12 +280,13 @@ h1{
   text-align: center;
   filter: grayscale(0);
   transition: 1s;
+  z-index: 20;
 }
 .gallery img:hover{
   text-align: center;
 /*  filter: grayscale(0);*/
   transform: scale(1.1);
-  z-index: 50;
+  z-index: 20;
 }
 
 
