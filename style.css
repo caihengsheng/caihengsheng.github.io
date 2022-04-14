@@ -400,18 +400,18 @@ section video{
 section .navigation{
   position: absolute;
   bottom: 80px;
-  left: 30%;
-  transform: translateX(-30%);
+  left: 5%;
+  transform: translateX(-10%);
   z-index: 100;
   display: flex;
 }
 section .navigation li{
   list-style: none;
   cursor: pointer;
-  margin: 0 10px;
+  margin: 0 5px;
   border-radius: 8px;
   background: #2e8d86;
-  padding: 3px 3px 0;
+  padding: 0 3px 0; 
   opacity: 0.7;
   transition: 0.5s;
 }
@@ -424,6 +424,6 @@ section .navigation li img{
   transition: 0.5s;
 }
 section .navigation li img:hover{
-  width: 100px;
+  width: 80px;
 }
 
