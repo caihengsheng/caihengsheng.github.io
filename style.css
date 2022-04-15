@@ -395,7 +395,7 @@ section video{
   left: 0;
   width: 500px;
   height: 60%;
-  object-position: 50% 50%;
+  object-position: 50% 60%;
 }
 section .navigation{
   position: absolute;
