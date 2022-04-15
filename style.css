@@ -383,7 +383,7 @@ section{
   background: rgba(0,100,0);
   color: #fff;
 } 
- .Video_sliders h2{
+ .Video_sliders h3{
   text-align: center;
   z-index: 20;
   background: rgba(0,100,0);
@@ -393,8 +393,8 @@ section video{
   position: absolute;
   top: -10px;
   left: 0;
-  width: 500px;
-  height: 60%;
+  width: 400px;
+  height: 50%;
   object-position: 50% 60%;
 }
 section .navigation{
