@@ -403,7 +403,7 @@ video{
   left: 80px;
   width: 400px;
   height: 50%;
-  object-position: 50% 80%;
+  object-position: 80% 85%;
 }
 .navigation{
   position: absolute;
