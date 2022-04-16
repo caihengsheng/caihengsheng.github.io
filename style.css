@@ -222,12 +222,12 @@ h1{
   justify-content:center;
   flex-direction: column;
 }
-
+/*
 .container h1{
   top: 290px;
   z-index: 20;
-  background: #2bab0d/*rgba(0,100,0);*/
-} 
+  background: #2bab0drgba(0,100,0);
+} */
 
 .container h2{
   z-index: 20;
@@ -384,55 +384,66 @@ h1{
   background: rgba(0,100,0);
   color: #fff;
 } 
-section{
+.Video_sliders{
+  align-items: center;
   position: relative;
-  width: 88%;
-  height: 100vh;
+  width: 100%;
+  height: 250vh;
+  background: rgba(0,100,0);
 }
- .Video_sliders h3{
+h3{
   text-align: center;
   z-index: 20;
   background: rgba(0,100,0);
   color: #fff;
 } 
-section video{
+video{
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -480px;
+  left: 80px;
   width: 400px;
   height: 50%;
-  object-position: 50% 60%;
+  object-position: 50% 80%;
 }
-section .navigation{
+.navigation{
   position: absolute;
   bottom: 40px;
-  left: 80px;
-  top: 48%;
+  left: 40px;
+  top: 31%;
   transform: translateX(-10%);
   z-index: 100;
   display: flex;
+  background: rgba(0,100,0);
 }
-section .navigation li{
+.navigation li{
+
   list-style: none;
   cursor: pointer;
   margin: 0;
-  border-radius: 4px;
+  background-size: contain;
+  border-radius: 5px;
   background: #2d7c41;
-  padding: 0; 
+  padding: 1px; 
   opacity: 0.7;
   transition: 0.5s;
 }
-section .navigation li:hover{
+.navigation li:hover{
   opacity: 1;
 }
-
-section .navigation li img{
-
-  width: 40px;
+.navigation img{
+  background: #2d7c41;
+  padding: 10px; 
+  width: 80px;;
+  border: 1px solid red;
+}
+.navigation li img{
+  border: 1px solid red;
+  width: 80px;
   transition: 0.5s;
 }
+/*
 section .navigation li img:hover{
-  width: 80px;
-}
+  width: 90px;
+} */
 
 
