@@ -356,18 +356,19 @@ h1{
   z-index: 20;
   background: rgba(0,100,0);
   color: #fff;
+  position: relative;
 
 } 
 .Video_sliders{
   align-items: center;
   position: relative;
   width: 80%;
-  height: 250vh;
+  height: 235vh;
 }
 
 video{
-  position: absolute;
-  top: -480px;
+  position: relative;
+  top: -25%;
   left: 60px;
   width: 60%;
   height: 50%;
@@ -376,14 +377,12 @@ video{
 
 .navigation{
   position: relative;
-  left: 15%;
-  right: 5%;
-  top: 31%;
+  left: 5%;
+  top: -25%; /* control video top position */
   transform: translateX(-20%);
   z-index: 100;  
 }
 .navigation li{
-  
   cursor: pointer;
   border-radius: 8px;
   background: #2d7c41;
@@ -396,7 +395,8 @@ video{
 
 #myBtn{
   width: 100%;
-  height: auto;
+  height: -50%;
+  
   border: 1px solid red; 
   border-radius: 50%;
   background:#b2ff00;
@@ -405,13 +405,13 @@ video{
 .navigation img{
   background: #2d7c41;;
   padding: 2px; 
-  width: 80px;;
+  width: 80%;
   border: 1px solid blue;
   border-radius: 50%;
 }
 .navigation li img{
-
-  width: 80px;
+  height: -50%;
+  width: 80%;
   transition: 0.5s;
 }
 @media only screen and (max-width: 700px) {
@@ -421,7 +421,7 @@ video{
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 400px) {
   .navigation li{
     width: 100%;
     margin: 3px 0;
