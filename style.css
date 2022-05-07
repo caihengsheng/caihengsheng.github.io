@@ -356,7 +356,7 @@ h3{
   position: relative;
   text-align: center;
   z-index: 20;
-  background:rgba(0,100,0); color:#fff;
+  background:rgba(0,100,0); color:#fff
 } 
 
 .container .Video_sliders{
@@ -377,8 +377,7 @@ video{
 
 .navigation{
   position: relative;
-  left: 5%;
-  top: -25%; /* control video top position */
+  left: 14%;
   transform: translateX(-20%);
   z-index: 100;  
 }
@@ -396,21 +395,21 @@ video{
 #myBtn{
   width: 100%;
   height: -50%;  
-  border: 1px solid red; 
+  border: 1px solid rgb(0, 255, 13); 
   border-radius: 50%;
-  background:#b2ff00;
+  background:#4c6b03;
   }
 
 .navigation img{
   background: #2d7c41;;
   padding: 2px; 
   width: 80%;
-  border: 1px solid blue;
+  border: 1px solid yellow;
   border-radius: 50%;
 }
 .navigation li img{
   height: -50%;
-  width: 80%;
+  width: 100%;
   transition: 0.5s;
 }
 @media only screen and (max-width: 700px) {
