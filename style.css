@@ -377,7 +377,7 @@ video{
 
 .navigation{
   position: relative;
-  left: 14%;
+  left: 15%;
   transform: translateX(-20%);
   z-index: 100;  
 }
