@@ -237,6 +237,12 @@ h1{
 .swiper-slide img{
   width:100%;
 }
+.swiper-slide img:hover{
+  text-align: center;
+/*  filter: grayscale(0);*/
+
+  z-index: 20;
+}
 .swiper .swiper-button-prev, .swiper .swiper-button-next{
   color: blue;
 } 
