@@ -32,13 +32,22 @@
     </span>
       <a class="active" href="#home">Home</a>
       <a href="https://ici.radio-canada.ca/rci/zh-hans/%E6%9C%80%E6%96%B0%E4%BF%A1%E6%81%AF" target="_blank">最新消息</a>
-      <a href="https://www.bilibili.com/video/BV1DL411H7SV/" target="_blank">网页编程</a>
-      <a href="https://www.runoob.com/python/python-tutorial.html" target="_blank">Python</a>
+      <a href="https://www.bilibili.com/video/BV1DL411H7SV/" target="_blank">网页编程</a><a href="https://www.runoob.com/python/python-tutorial.html" target="_blank">Python教程</a>
+      <a href="#"<li class="dropbtn">
+        <a class="navClicker" >Python基础 ▾</a><ul class="dropdown-content" style="display:none"><li><a href="https://mofanpy.com/tutorials/python-basic/interactive-python/">交互式学Python </a></li> <li><a href="https://mofanpy.com/tutorials/python-basic/multiprocessing/">多进程 multiprocessing </a></li> <li><a href="https://mofanpy.com/tutorials/python-basic/threading/">多线程 threading </a></li> <li><a href="https://mofanpy.com/tutorials/python-basic/tkinter/">窗口视窗 Tkinter </a></li> </ul> </li>
       <a href="https://www.runoob.com/sql/sql-tutorial.html" target="_blank">SQL</a>
-      <a href="https://docs.zohopublic.com/file/3plwb5690ed0439084a51a50516b6ade167ff" target="_blank">蔡邦华院士诞辰120周年纪念图文集</a>
-      <a href="https://docs.zohopublic.com/file/3plwb18561307478447b3ae626f20ccd51ecb" target="_blank">蔡邦华院士诞辰120周年第一、二部分-著作和讲演稿</a>
-      <a href="https://docs.zohopublic.com/file/qpuog362e2a7dc38a484da7d9b4b94b7ea7ea" target="_blank">蔡邦华院士诞辰120周年第三部分-生平集</a>
-      <a href="https://docs.zohopublic.com/file/qpuog39c7b530321a4d8eb6d9671924b804fa" target="_blank">蔡邦华院士诞辰120周年第四部分-有关蔡邦华资料的附件</a>
+      <a href="#"
+      <li id="liStudy" class="dropbtn">
+        <a class="navClicker">蔡邦华院士诞辰120周年纪念 ▾</a>
+        <ul class="dropdown-content" style="display:none">
+            <li
+            class="dropbtn"><a href="https://docs.zohopublic.com/file/3plwb5690ed0439084a51a50516b6ade167ff" target="_blank">蔡邦华院士诞辰120周年纪念图文集</a></li>
+            <li class="dropbtn"><a href="https://docs.zohopublic.com/file/3plwb18561307478447b3ae626f20ccd51ecb" target="_blank">蔡邦华院士诞辰120周年第一、二部分-著作和讲演稿</a></li>
+            <li class="dropbtn"><a href="https://docs.zohopublic.com/file/qpuog362e2a7dc38a484da7d9b4b94b7ea7ea" target="_blank">蔡邦华院士诞辰120周年第三部分-生平集</a></li>
+            <li class="dropbtn"><a href="https://docs.zohopublic.com/file/qpuog39c7b530321a4d8eb6d9671924b804fa" target="_blank">蔡邦华院士诞辰120周年第四部分-有关蔡邦华资料的附件</a>
+        </ul>
+      </li>  
+    </a>
       <a href="#about">联系我们</a>
 
     <div class="logo_container">
@@ -633,6 +642,32 @@
   }
   function alert(hmmmmmm){
     document.getElementById("myBtn").src = hmmmmmm;
+  }
+</script>
+<script type="text/javascript" async>
+  $(document).ready(function () {
+    $('.navClicker').on("click", function (e) {
+      $(this).next('.dropdown-content').toggle();
+      e.stopPropagation();
+      e.preventDefault();
+    });
+  });
+
+  if ('False' === "True") {
+    const aLink = $("#liNotification").children().first();
+    aLink.empty();
+    aLink.attr("id", "nav-img-a");
+    aLink.attr("href", "/user/");
+    aLink.append($("<img>", {
+      id: "nav-img",
+        src: "/static/img/icon/default_user_icon.png",
+        alt: ""
+    }));
+
+    let navNoti = $(".nav-notification");
+    navNoti.css({display: "inline-block"}).append(aLink);
+    navNoti.html(navNoti.html());
+    checkCommentResponse('https://mofanpy.com/api/comment');
   }
 </script>
 </body>

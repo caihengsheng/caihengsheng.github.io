@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>老蔡网站</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
+  <script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
+  <link rel="icon" href="C.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="C.ico" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/f4ff6de45d.js" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    function getDa(pageName){
+      var req=new XMLHttpRequest();
+      req.openload=function(){
+        var context1=document.getElementById("content1");
+        context1.innerHTML=this.responseText;
+      };
+      req.send();
+    }
+  </script>
+</head>
+<body>
+  <div class="menu-bar">
+    <span style="font-size:25px;color:yellow;text-align:left;cursor:pointer" onclick="openNav()"> &#9776;    
+    </span>
+      <a class="active" href="#home">Home</a>
+      <a href="https://ici.radio-canada.ca/rci/zh-hans/%E6%9C%80%E6%96%B0%E4%BF%A1%E6%81%AF" target="_blank">最新消息</a>
+      <a href="https://www.bilibili.com/video/BV1DL411H7SV/" target="_blank">网页编程</a>
+      <a href="https:/<li class="dropbtn">
+        <a class="navClicker">/www.runoob.com/python/python-tutorial.html" target="_blank">Python</a>
+      <a href="https://www.runoob.com/sql/sql-tutorial.html" target="_blank">SQL</a>
+      <a href="#"
+      <li class="dropbtn">
+        <a class="navClicker">蔡邦华院士诞辰120周年纪念 ▾</a>
+        <ul class="dropdown-content" style="display:none">
+            <li
+            class="dropbtn"><a href="https://docs.zohopublic.com/file/3plwb5690ed0439084a51a50516b6ade167ff" target="_blank">蔡邦华院士诞辰120周年纪念图文集</a></li>
+            <li class="dropbtn"><a href="https://docs.zohopublic.com/file/3plwb18561307478447b3ae626f20ccd51ecb" target="_blank">蔡邦华院士诞辰120周年第一、二部分-著作和讲演稿</a></li>
+            <li class="dropbtn"><a href="https://docs.zohopublic.com/file/qpuog362e2a7dc38a484da7d9b4b94b7ea7ea" target="_blank">蔡邦华院士诞辰120周年第三部分-生平集</a></li>
+            <li class="dropbtn"><a href="https://docs.zohopublic.com/file/qpuog39c7b530321a4d8eb6d9671924b804fa" target="_blank">蔡邦华院士诞辰120周年第四部分-有关蔡邦华资料的附件</a>
+        </ul>
+      </li>  
+    </a>
+      <a href="#about">联系我们</a>
+
+    <div class="logo_container">
+      <h1>老蔡网站</h1>
+    <ul>
+      <li class="active"><a href="#"><i class="fa fa-home"></i>主页</a>
+        <div class="sub-menu-1">
+          <ul>
+            <li class="hover-me"><a href="#">3D翻动卡</a><i class="fa fa-angle-right"></i>
+              <div class="sub-menu-2">
+                <ul>
+                  <li><a href="https://caihengsheng.github.io/3Dflipcard/index.html" target="_blank">老蔡3D翻动卡</a></li>
+                  <li><a href="https://weather.gc.ca/city/pages/on-118_metric_e.html" target="_blank">Ottawa 7day's 天气</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="hover-me"><a href="#">大型纪录片  </a><i class="fa fa-angle-right"></i>
+              <div class="sub-menu-2">
+                <ul>
+                  <li><a href="https://mp.weixin.qq.com/s/bSlv2CkBv0zkYiH9SfXzxw" target="_blank">《先生十集》</a></li>
+                  <li><a href="http://v.qq.com/detail/s/sdp0010051e1w6k.html?" target="_blank">《百年南社六集》</a></li>
+                  <li><a href="https://caih1943.github.io/southwestU.htm" target="_blank">《西南联大纪录片》</a></li>
+                  <li><a href="https://youtu.be/DBq2aJSIwBQ" target="_blank">《世界桥梁博物馆-贵州》</a></li>
+                  <li><a href="https://bit.ly/3uLpvby" target="_blank">《易经的奥秘》 | 曾仕强讲易经《CCTV百家讲坛》</a></li>
+                  <li><a href="https://www.bilibili.com/video/BV1g3411y7Lc/" target="_blank">《易经的智慧150集全》 | 曾仕强讲易经</a></li>
+                  </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </li>       
+      <li><a href="#"><i class="fa fa-globe"></i>旅游</a>
+        <div class="sub-menu-1">
+          <ul>
+            <li class="hover-me"><a href="#">旅游（一）</a><i class="fa fa-angle-right"></i>
+              <div class="sub-menu-2">
+                <ul>
+                  <li><a href="https://1drv.ms/v/s!Av-Jm_UNifOuhJBnv63rNwS46SLIag?e=TNfpxf"  target="_blank">冰岛游</a></li>
+                  <li><a href="https://1drv.ms/v/s!Av-Jm_UNifOuhJBm1btJA0igM7vmTw"  target="_blank">北欧游轮游</a></li>
+                  <li><a href="https://1drv.ms/v/s!Av-Jm_UNifOuhJBujgZ6DeBlfRWnxQ"  target="_blank">挪威游</a></li>
+                  <li><a href="https://1drv.ms/v/s!Av-Jm_UNifOuhJBvGlEGOQ9n0MY-Hg"  target="_blank">北美西部游</a></li>
+                  <li><a href="https://1drv.ms/v/s!Av-Jm_UNifOuhJB9Ab9TqGHC9vNcTQ?e=Y6yWf0"  target="_blank">加拿大班芙和坎莫尔游</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="hover-me"><a href="#">旅游（二）</a><i class="fa fa-angle-right"></i>
+              <div class="sub-menu-2">
+                <ul>
+                  <li><a href="https://1drv.ms/v/s!Av-Jm_UNifOuhJEBxEPhizxOCF_mIQ?e=Gtal3e"  target="_blank">瑞士游2019（一）</a></li>
+                  <li><a href="https://1drv.ms/v/s!Av-Jm_UNifOuhJEAkCk6ti0I_ne0Dw?e=OSiCUF"  target="_blank">瑞士游2019（二）</a></li>
+                  <li><a href="https://1drv.ms/v/s!Av-Jm_UNifOuhJEClJ5UccKnwldcAg?e=falIEZ"  target="_blank">瑞士游2019（三）</a></li>
+                  <li><a href="https://1drv.ms/v/s!Av-Jm_UNifOuhJx9cKuqJ312olkNxA?e=zQJ27z"  target="_blank">意大利和法国南部游（一）</a></li>
+                  <li><a href="https://1drv.ms/v/s!Av-Jm_UNifOuhJx-F95GLJHCyxlcdg?e=gqbfyT" target="_blank">意大利和法国南部游（二）</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="hover-me"><a href="#">旅游（三）</a><i class="fa fa-angle-right"></i>
+              <div class="sub-menu-2">
+                <ul>
+                  <li><a href="https://1drv.ms/v/s!Av-Jm_UNifOuhJBwy8NBD2GoyJDZhA?e=agqcgq"  target="_blank">云南昆明游</a></li>
+                  <li><a href="https://1drv.ms/v/s!Av-Jm_UNifOuhJB161bvmtwnIs_Xbg?e=r9Kccx"  target="_blank">日本东京游</a></li>
+                  <li><a href="https://docs.zohopublic.com/file/pwkrp85e9cceaf67c41afa0ef8029cf7b33a3"  target="_blank">宝岛台湾游（一）</a></li>
+                  <li><a href="https://docs.zohopublic.com/file/pwkrp919f29fb48f04ebabdbd9ca72cb319a5"  target="_blank">宝岛台湾游（二）</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="hover-me"><a href="#">旅游（四）</a><i class="fa fa-angle-right"></i>    
+                   <div class="sub-menu-2">
+                      <ul>
+                        <li><a href="https://caih1943.github.io/travel.htm"  target="_blank">我的全部旅游网页</a></li>
+                        <li><a href="https://mp.weixin.qq.com/s/kymwXAiawcSgUhrj3aAgUQ" target=" _blank">卢浮宫照片</a></li>
+                      </ul>
+                    </div>           
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li><a href="#"><i class="fa fa-camera"></i>相册</a>
+        <div class="sub-menu-1">
+        <ul>
+      <li class="hover-me"><a href="#">相册</a><i class="fa fa-angle-right"></i>
+        <div class="sub-menu-2">
+          <ul>
+            <li><a href="https://docs.zohopublic.com/file/pwkrpa41ae7d74c51449e845547a72a572344" target="_blank">中关村回顾相册</a></li>
+            <li><a href="https://photos.google.com/memory/featured/AF1QipOT3pBMMRnwd5-VWpsi0b4BNfu3Y2pE1_CSDy8V3A/photo/AF1QipPfcWM7LmLzm3W9LbkqxkToGq3TgrcP6j-4VuJK" target="_blank">2013年苏沪行部分照片</a></li>
+            <li><a href="https://docs.zohopublic.com/file/66x6led35803fee464e2392d6f842f035c974" target="_blank">渥太华郁金香节照片</a></li>
+            <li><a href="https://mp.weixin.qq.com/s/LmeNJA8X2kn2v5ujdUvMdg" target="_blank">周恩来总理照片100张</a></li>
+          </ul>
+        </div>
+      </li>
+            <li class="hover-me"><a href="#">欧洲旅游相册</a><i class="fa fa-angle-right"></i>
+              <div class="sub-menu-2">
+                <ul> 
+            <li><a href="https://photos.google.com/share/AF1QipPHJ04dVF1QWItl4llAfLwcitXErejitqE5VBgo0xy5OUSYpjubtGWsL6myTWBIxg/photo/AF1QipNSSX9ZNKComBCv2EW19sTzaL7wDwCuwiVbUHPf?key=TkVCQ3N3ckxNY0ctYXNBZTc5Vmw1bFp0WkxGcXVR" target="_blank">维也纳和布拉格照片(在右上角点 ⁝ 请选slideshow观赏)</a></li>
+            <li><a href="https://photos.google.com/share/AF1QipNV83OspuN12i2-oeIS2sq4oyhUpRcJL3ZRuFpSMhU9ipdYFpjjNCwKkBD7uppGLw/photo/AF1QipPIVWwM6Au-X6VthWV2UNM8oW52GnlldovvoxjS?key=TDczRkNOZXJRcjNxN3ZSeUJ1U08tZ19sNk5peUFR" target="_blank">2015年德国慕尼黑照片(在右上角点 ⁝ 请选slideshow观赏)</a></li>
+            <li><a href="https://photos.google.com/share/AF1QipNo6d8X3v3QgxhZdqA0gGRfSd_9CXkKlwJ2x-PmeHth5GPMu0CjgAQY6MFIGCCYUA?key=Z3c3NmtEa0VVc2I2aVdHRGJwSDk2LWV0LUh0U3Rn" target="_blank">走访父亲20世纪30年代留学的慕尼黑大学(在右上角点 ⁝ 请选slideshow观赏)</a></li>
+            <li><a href="https://photos.google.com/album/AF1QipPjg2MDsBrEQhnmDs66DhbV3XV9AE7hAWEjG40E/photo/AF1QipOGb9HptBuRw5kKbY32XaRHls2VQ-KrZqBUHfPD" target="_blank">在贝希特斯加登和国王湖(在右上角点 ⁝ 请选slideshow观赏)</a></li>                  
+            <li><a href="https://photos.google.com/album/AF1QipO6m0rbSSJdxfvltfpqMMNWIEqjOgx_kVfH_vaB/photo/AF1QipPWMlwSHtCzxmQiPF4GqgHmv2DvBNFY82LSQm-t" target="_blank">在菲森和新天鹅堡(在右上角点 ⁝ 请选slideshow观赏)</a></li>
+            <li><a href="https://photos.google.com/share/AF1QipOL7DaIDMibSU6kOd2JCKVBGmLOZAh9IRRTIQcYyEOEJAwlkActKAR3uSowd9xgHg?key=TUdUaGJiOTJnRkpXUUdGbHhxZTU3SmktVDJWQzVR" target="_blank">前往萨尔茨堡和哈尔斯塔特(在右上角点 ⁝ 请选slideshow观赏)</a></li>
+            <li><a href="https://photos.google.com/album/AF1QipMQUEvAjJDdpDjMp8lYNAPpisIDhc1O0nWKio2M/photo/AF1QipPeVS_B6FucrN1V5rnq_V0YaGr2tMqvRD29nNmm" target="_blank">在伦敦和巴黎(在右上角点 ⁝ 请选slideshow观赏)</a></li>
+            <li>
+              <li><a href="https://photos.google.com/album/AF1QipMvi23hNyaix8APjvuIZIlHf26xPIYY0ECuidbf" target="_blank">苏格兰湖区、爱丁堡和牛津、莎翁故居(在右上角点 ⁝ 请选slideshow观赏)</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="hover-me"><a href="#">旅游照片册</a><i class="fa fa-angle-right"></i>
+          <div class="sub-menu-2">
+            <ul> 
+        <li><a href="https://photos.google.com/share/AF1QipMZPc-oL5CQOGT8AgMTzYKjZ38OO3z0hLHU8Tn_MBe1IwnztQCg8R_mpkCYK673yA?key=T0szNnc1anEwSTlCcG4wQm0wQS1zcG9iZDF2UklB" target="_blank">韩国行 2012—11</a></li>
+        <li><a href="https://photos.google.com/share/AF1QipPKyRmiapgfNmgbPVhn3SVVtQv6R7pMBtRJEQbkvysH0d1Y6o8LwNPxMgN_2sZOhA" target="_blank">2015年5月7日-14日在伦敦和巴黎</a></li>
+        <li><a href="https://photos.google.com/share/AF1QipOaGZm5hTLzo150miZ6YRNEiJpJMatg1y7w3qlzFNTly2H1qBvzicbGR2LHgKzCsg?key=UnlIaFd5cWRRTWY3dWpQVnNPenpXVWpTNW9ndU9R" target="_blank">法国和荷兰</a></li>
+        <li><a href="https://photos.google.com/share/AF1QipOsw8kBoFIQMn1B9xWVZqfwazhEhngiMbR2ktwuotA52-qdfIAo7iJEHoKv9AvW3Q" target="_blank">5月20-21日卢森堡、科隆、法兰克福和英戈尔施塔特</a></li>
+        <li><a href="https://photos.google.com/album/AF1QipOgMhhjHPl42TgGRtlNrP17TI58rMvznjR7uO7B" target="_blank">2014年10月4日在总统巨石和基斯通</a></li>
+        <li><a href="https://photos.google.com/album/AF1QipPxlDdq06CggrQf2xbPJrZd0FrMynku8RMcZm5d" target="_blank">在Arches National Park拱门国家公园</a></li>
+        <li><a href="https://photos.google.com/album/AF1QipNi1WT18u2bJ9VIXnI8ZwyL3j1VxgjEM1E-rkYC" target="_blank">在黄石国家公园</a></li>
+        <li><a href="https://photos.google.com/album/AF1QipOi3qUUr_4W5RnCjCESDGo9VIHg5B3xpUpuvn-4" target="_blank">在佛光山和周伯昆家</a></li>
+        <li><a href="https://photos.google.com/album/AF1QipN8m2t9v2uawiT4dgXGWSUoU16dgW04ifOecGaf" target="_blank">在洛杉矶和比华利山庄</a></li>
+        <li><a href="https://photos.google.com/album/AF1QipPoetpdS6ARCKV58CBZ_YSbCeaivXupiMBw8ZMV" target="_blank">在圣迭戈</a></li>
+      </ul>
+    </div>
+  </li>
+<li class="hover-me"><a href="#">同学照片册</a><i class="fa fa-angle-right"></i>
+  <div class="sub-menu-2">
+    <ul> 
+      <li><a href="https://docs.zohopublic.com/file/a7m9vf058302f3ce944afa8ede99fa8f9acee" target="_blank">1955年北大附小同学聚会 - 情系燕园（2013年）（文）</a></li>
+      <li><a href="https://docs.zohopublic.com/file/83x9oc1d9909ce90644cf8587ac1ba612c497" target="_blank">1955年届北大附小同学聚会- 情系燕园（2013年）（视频）</a></li>
+<li><a href="https://docs.zohopublic.com/file/qu2bf5400c6bae39f4d7f88984d65165f188e" target="_blank">1955~1958年清华附中初中甲班同学相册（2022修正版）</a></li>
+<li><a href="https://docs.zohopublic.com/file/8bzr7728683f999f64cfaa401782bf90cd2fc" target="_blank">1958~1961年北京101中同学相册（2022版）I</a></li>
+<li><a href="https://docs.zohopublic.com/file/quvm9dc64fbfeaf134d9ba6113acfbb7c2341" target="_blank">1958~1961年北京101中同学相册（2016版）II</a></li>
+<li><a href="https://photos.google.com/share/AF1QipP6r47a1DDkFbt73mkCFosa6aNZs5_ZgDPE027edvotXfYBU4te9Sbhbhbu-iIqdg?key=TW43RWJvRUc0UTU4R0xlWVNOUmFFeDB4N1V0NWRR" target="_blank">2010年北京101中老同学团聚的相册（2013）</a></li>
+<li><a href="https://photos.google.com/album/AF1QipNjHdkc9fAdf6HMC0x20BNFeHG6D44ZzalUzOrg" target="_blank">北京工业大学50周年的相册</a></li>
+<li><a href="https://photos.google.com/album/AF1QipNRsxh7UsLUcDHlv4Xizz8tsJnkPw2JUNMoZRH6" target="_blank">2016年老同学在多伦多和大瀑布之游</a></li>
+  </ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li><a href="#"><i class="fa fa-music"></i>音乐</a>
+        <div class="sub-menu-1">
+          <ul>
+            <li class="hover-me"><a href="#">男女高音</a><i class="fa fa-angle-right"></i>
+              <div class="sub-menu-2">
+                <ul>
+                  <li><a href="https://youtu.be/qt_OkgSOrkU"  target="_blank">Andrea Bocelli, Céline Dion</a></li>
+                  <li><a href="https://youtu.be/4L_yCwFD6Jo"  target="_blank">Andrea Bocelli, Sarah Brightman</a></li>
+                  <li><a href="https://youtu.be/lkIN3FLqMCc"  target="_blank">Andrea Bocelli </a></li>
+                  <li><a href="https://youtu.be/ERD4CbBDNI0"  target="_blank">三大男高音</a></li>
+                  <li><a href="https://mp.weixin.qq.com/s/oN-hBo0kHkd80-r3dfh4tg"  target="_blank">帕瓦罗蒂纪录片《生命的七个咏叹调》</a></li>
+                  <li><a href="https://youtu.be/fyYOzl1RbBE"  target="_blank">当你老了</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="hover-me"><a href="#">小夜曲</a><i class="fa fa-angle-right"></i>
+              <div class="sub-menu-2">
+                <ul>
+                  <li><a href="https://www.youtube.com/watch?v=dXApBvgUNBQ" target="_blank">托赛里小夜曲</a></li>
+                  <li><a href="https://www.youtube.com/watch?v=vG_FBIbGuvg" target="_blank">莫扎特小夜曲</a></li>
+                  <li><a href="https://www.youtube.com/watch?v=gZlJuaoG6-U" target="_blank">舒伯特小夜曲</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="hover-me"><a href="#">施特劳斯</a><i class="fa fa-angle-right"></i>
+              <div class="sub-menu-2">
+                <ul>
+                  <li><a href="https://www.youtube.com/watch?v=c57aFp4LAO4"  target="_blank">蓝色多瑙河</a></li>
+                  <li><a href="https://www.youtube.com/watch?v=zzfTW6HbrvU"  target="_blank">皇帝圆舞曲</a></li>
+                  <li><a href="https://www.youtube.com/watch?v=aOcWrhCd4M8"  target="_blank">春之声圆舞曲</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="hover-me"><a href="#">贝多芬</a><i class="fa fa-angle-right"></i>
+              <div class="sub-menu-2">
+                <ul>
+                  <li><a href="https://www.youtube.com/watch?v=d44qk2IQ7cI" target="_blank">命运交响曲</a></li>
+                  <li><a href="https://www.youtube.com/watch?v=aW-7CqxhnAQ" target="_blank">田园交响曲</a></li>
+                  <li><a href="https://www.youtube.com/watch?v=ahvrHrPGi1k" target="_blank">第七交响曲</a></li>
+                  <li><a href="https://www.youtube.com/watch?v=gCkndZBnMLw" target="_blank">第八交响曲</a></li>
+                  <li><a href="https://www.youtube.com/watch?v=rOjHhS5MtvA&t=3146s" target="_blank">第九交响曲</a></li>
+                </ul>
+              </div>
+            </li>
+                  <li class="hover-me"><a href="#">音乐讲座</a><i class="fa fa-angle-right"></i>
+                    <div class="sub-menu-2">
+                      <ul>
+                        <li><a href="https://youtu.be/daSQNT8HPVE" target="_blank">舒曼「夢幻曲」</a></li>
+                        <li><a href="https://youtu.be/RcVyNE5L-zk" target="_blank">蕭邦的音乐為什麼好聽</a></li>
+                        <li><a href="https://youtu.be/_vbOhtwxfe0" target="_blank">超乎你想像的「卡農」!! - 巴哈: 郭德堡變奏曲</a></li>
+                        <li><a href="https://youtu.be/CLX_fCC97Sk" target="_blank">莫札特的音樂為什麼聽起來很「順」?</a></li>
+                        <li><a href="https://youtu.be/6YRHf1SGI8c" target="_blank">舒伯特-魔王 為什麼是世紀經典?</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li><a href="#"><i class="fa fa-edit"></i>培训</a>
+        <div class="sub-menu-1">
+          <ul>
+            <li class="hover-me"><a href="#">课程（一）</a><i class="fa fa-angle-right"></i>
+              <div class="sub-menu-2">
+                <ul>
+                  <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
+                  <li><a href="https://www.youtube.com/c/codeSTACKr" target="_blank">codeSTACKr</a></li>
+                  <li><a href="https://www.youtube.com/channel/UCJZv4d5rbIKd4QHMPkcABCw" target="_blank">Kevin Powell</a></li>
+                  <li><a href="https://www.youtube.com/channel/UCkjoHfkLEy7ZT4bA2myJ8xA" target="_blank">Easy Tutorials</a></li>
+                  <li><a href="https://python-course.eu/python-tutorial/" target="_blank">Python</a></li>
+                  <li><a href="https://training.pada-x.com/online.htm" target="_blank">彭彭课程</a></li>
+                  <li><a href="https://www.youtube.com/channel/UCdyjiB5H8Pu7aDTNVXTTpcg" target="_blank">莫烦教学</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="hover-me"><a href="#">课程（二）</a><i class="fa fa-angle-right"></i>
+              <div class="sub-menu-2">
+                <ul>
+                  <li><a href="https://www.youtube.com/channel/UCcIXc5mJsHVYTZR1maL5l9w" target="_blank">DeepLearing.AI</a></li>
+                  <li><a href="https://www.coursera.org/" target="_blank">Coursera</a></li>
+                  <li><a href="https://www.youtube.com/channel/UC2ggjtuuWvxrHHHiaDH1dlQ" target="_blank">Hung-YiLee</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="hover-me"><a href="#">课程（三）</a><i class="fa fa-angle-right"></i>
+              <div class="sub-menu-2">
+                <ul>
+                  <li><a href="https://youtu.be/IyR_uYsRdPs" target="_blank">Photoshop for Beginners</a></li>
+                  <li><a href="https://youtu.be/_nQKf_Fgk_M" target="_blank">Photoshop Advanced</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li><a href="#"><i class="fa fa-photo"></i>事件</a>
+        <div class="sub-menu-1">
+          <ul>
+            <li class="hover-me"><a href="#">浙江大学西迁宜州办学80周年纪念</a><i class="fa fa-angle-right"></i>
+              <div class="sub-menu-2">
+                <ul>
+                  <li><a href="http://mp.weixin.qq.com/s?__biz=MzI1MTQzNTE5OA==&mid=2247484539&idx=1&sn=242822567240c3d9578df3d970fb3530&chksm=e9f245aade85ccbc4b63d288a045af85842b0c57ecba3b82f7cb906d514dca9b6f866c7fd30e&mpshare=1&scene=1&srcid=1126D90YuzHwB0DljAJ64NmB#rd" target="_blank">浙江大学西迁宜州办学80周年纪念活动</a></li>
+                  <li><a href="http://mp.weixin.qq.com/s?__biz=MzU2MTY0MTcxNA==&mid=2247486075&idx=2&sn=36416822054db9bd7338ef7e8641e31c&chksm=fc74ebe6cb0362f06ace26e62048274d9920aa51d30a17615deee2505bb8faaa70388a637fe9&mpshare=1&scene=1&srcid=1121ekt3aWCh3YTBoHlQoUCU#rd" target="_blank">浙江大学西迁宜州办学80周年宜州新闻</a></li>
+                  <li><a href="https://caihengsheng.wordpress.com/2022/01/21/%e5%9c%a8%e6%b5%99%e5%a4%a7%e8%a5%bf%e8%bf%81%e5%86%9d%e5%b1%b1%e5%8a%9e%e5%ad%a6-80-%e7%ba%aa%e5%bf%b5%e5%a4%a7%e4%bc%9a%e4%b8%8a%e7%9a%84%e5%8f%91%e8%a8%80/" target="_blank">我在浙大西迁宜山办学80周年会上的发言</a></li>                  
+                  <li><a href="http://www.360doc.com/content/18/1217/00/57999716_802304254.shtml" target="_blank">浙大西迁遵义办学老照片集锦</a></li> 
+                </ul>
+              </div>
+            </li>
+            <li class="hover-me"><a href="#">有关浙江大学</a><i class="fa fa-angle-right"></i>
+              <div class="sub-menu-2">
+                <ul>
+                  <li><a href="https://docs.zohopublic.com/file/202466bcbbc9e84ae46dc8a30e4b67439ad6a" target="_blank">国立浙江大学校刊1930第一期</a></li> 
+                  <li><a href="https://mp.weixin.qq.com/s/mY_OAy1FTgBtVSYTgQVwTQ" target="_blank">这些书带你了解浙江大学125年历史！</a></li> 
+                  <li><a href="http://www.yidianzixun.com/article/0JlXkbZH?s=4&share_count=2" target="_blank">老书的故事丨第一集 ：李约瑟与竺可桢</a></li> 
+                  <li><a href="https://docs.zohopublic.com/file/20246fc64348722ee46baaff66cddfe0cfb2c" target="_blank">浙大学者之五倍子研究将湄潭推向世界(钱永红)</a></li>
+                  <li><a href="https://www.bilibili.com/video/BV1hq4y137X1?zw" target="_blank">琼瑶笔下的贵州湄潭《菟丝花 1965》</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="hover-me"><a href="#">百年南社活动</a><i class="fa fa-angle-right"></i>
+              <div class="sub-menu-2">
+                <ul>
+                  <li><a href="https://caihengsheng.wordpress.com/2009/10/21/%e7%99%be%e5%b9%b4%e5%8d%97%e7%a4%be%ef%bc%88%e4%b8%89%e5%8d%81%e4%ba%8c%ef%bc%89%e3%80%8a%e9%99%88%e5%8e%bb%e7%97%85%e5%85%a8%e9%9b%86%e3%80%8b%e5%ba%8f%e8%a8%80/" target="_blank">《陈去病全集》序言-杨天石</a></li>
+                  <li><a href="https://docs.zohopublic.com/file/8x05cbd9ee47483654d09976428bac4b3d9d9" target="_blank">《陈去病全集》第一集</a></li>                  
+                </ul>
+              </div>
+            </li>
+            <li class="hover-me"><a href="#">《中关村回忆》发行</a><i class="fa fa-angle-right"></i>
+              <div class="sub-menu-2">
+                <ul>
+                  <li><a href="https://docs.zohopublic.com/file/l5w5p24570ee006784f5c91a8b69b674a6ad5" target="_blank">《中关村回忆》出版座谈会</a></li>                    <li><a href="https://docs.zohopublic.com/file/l5w5p8e85d77c119e4c3a946880ff2cc1b696" target="_blank">中关村回忆发行有关报道的文章</a></li>                    
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li><a href="#"><i class="fa fa-book"></i>书籍</a>
+        <div class="sub-menu-1">
+          <ul>
+            <li class="hover-me"><a href="#">我的著作（一）</a><i class="fa fa-angle-right" target="_blank"></i>
+              <div class="sub-menu-2">
+                <ul>
+                  <li><a href="https://www.cas.cn/zt/kjzt/zgchy/" target="_blank">中关村回忆</a></li>
+                  <li><a href="https://caihengsheng.github.io/indexpdf.htm" target="_blank">竺可桢校长和浙江大学（电脑阅读）</a></li>                  
+                  <li><a href="https://docs.zohopublic.com/file/q3pk4410b7c8e5ce04a9783a6d344f7f52378" target="_blank">竺可桢校长和浙江大学（手机或平板阅读）</a></li>                  
+                  <li><a href="https://book.yunzhan365.com/bayph/cbkz/mobile/index.html" target="_blank">蔡邦华院士生平集</a></li>
+                  <li><a href="https://book.yunzhan365.com/bayph/qiew/mobile/index.html" target="_blank">求是治虫害、兴邦振中华</a></li>
+                  <li><a href="https://caih1943.github.io/indexpdf.htm" target="_blank">蔡邦华院士诞辰110周年纪念文集（电脑阅读）</a></li>                  
+                  <li><a href="https://docs.zohopublic.com/file/q3pyb30a511f2d74245afa63414647500c563" target="_blank">蔡邦华院士诞辰110周年纪念文集（手机或平板阅读）</a></li>
+                  <li><a href="https://docs.zohopublic.com/file/pwkrpfac2e82097dc4c49a21339883e1ec7c3" target="_blank">我的求是之行（简）</a></li>
+                   <li><a href="https://docs.zohopublic.com/file/pwkrpd63324c02a5f485895bfec5022f81f6b" target="_blank">欧洲八国印象（简）</a></li>
+                   <li><a href="https://docs.zohopublic.com/file/pwkrp941d501e266e4d088dda839f9e1c6c8b" target="_blank">跟着我去意大利（简）</a></li>
+                   <li><a href="https://docs.zohopublic.com/file/pwkrp6e73b73d4a0544d1b8bb796b0017692c" target="_blank">陈绵祥诗词辑存（简）</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="hover-me"><a href="#">我在Amazon网站上的著作（繁）（二）</a><i class="fa fa-angle-right" target="_blank"></i>
+                <div class="sub-menu-2">
+                  <ul>
+                    <li><a href="https://www.amazon.ca/%E6%B1%82%E6%98%AF%E4%B9%8B%E8%A1%8C-%E9%87%8D%E8%B5%B0%E6%B5%99%E5%A4%A7%E8%A5%BF%E9%81%B7%E8%B7%AF-%E8%AE%80%E7%AB%BA%E5%8F%AF%E6%A5%A8%E6%97%A5%E8%A8%98%EF%BC%8C%E6%B2%BF%E8%91%97%E7%88%B6%E8%BC%A9%E8%B6%B3%E8%B7%A1%EF%BC%8C%E5%B0%8B%E8%A8%AA%E6%B5%99%E5%A4%A7%E8%A5%BF%E9%81%B7%E8%88%8A%E5%9D%80%EF%BC%88%E5%AF%A6%E8%B8%90%E7%AF%87%EF%BC%89-Traditional-Hengsheng-Cai-ebook/dp/B081BFMX8X/ref=sr_1_3?crid=3HXIK7OIB4CA5&keywords=hengsheng+cai&qid=1642198375&s=digital-text&sprefix=hengsheng+cai%2Cdigital-text%2C67&sr=1-3" target="_blank">求是之行-- 重走浙大西遷路 </a></li>
+                    <li><a href="https://www.amazon.ca/%E6%8E%A2%E7%B4%A2%E6%B5%99%E5%A4%A7-%E6%9D%B1%E6%96%B9%E5%8A%8D%E6%A9%8B-%E4%B9%8B%E8%AA%AA-%E9%87%8D%E8%B5%B0%E6%B5%99%E5%A4%A7%E8%A5%BF%E9%81%B7%E8%B7%AF-Traditional-ebook/dp/B08136Q13N/ref=sr_1_2?crid=3HXIK7OIB4CA5&keywords=hengsheng+cai&qid=1642198323&s=digital-text&sprefix=hengsheng+cai%2Cdigital-text%2C67&sr=1-2" target="_blank">探索浙大“東方劍橋”之說: 重走浙大西遷路 </a></li>                  
+                    <li><a href="https://www.amazon.ca/%E9%99%B3%E7%B7%9C%E7%A5%A5%E8%A9%A9%E8%A9%9E%E8%BC%AF%E5%AD%98-Traditional-Chinese-hengsheng-Cai-ebook/dp/B081KWRJ55/ref=sr_1_1?keywords=hengsheng+cai&qid=1642198135&s=digital-text&sr=1-1" target="_blank">陳緜祥詩詞輯存</a></li>                
+                    <li><a href="https://www.amazon.ca/%E6%AD%90%E6%B4%B2%E5%85%AB%E5%9C%8B%E6%B8%B8%E8%A8%98-Traditional-Chinese-Hengsheng-Cai-ebook/dp/B0833PFSP9/ref=sr_1_4?crid=3HXIK7OIB4CA5&keywords=hengsheng+cai&qid=1642198375&s=digital-text&sprefix=hengsheng+cai%2Cdigital-text%2C67&sr=1-4" target="_blank">歐洲八國游記</a></li>
+                    <li><a href="https://www.amazon.ca/%E7%91%9E%E5%A3%AB%E6%B7%B1%E5%BA%A6%E9%81%8A%E8%A8%98-Traditional-Chinese-Hengsheng-Cai-ebook/dp/B082QPLYHG/ref=sr_1_5?crid=3HXIK7OIB4CA5&keywords=hengsheng+cai&qid=1642198375&s=digital-text&sprefix=hengsheng+cai%2Cdigital-text%2C67&sr=1-5" target="_blank">瑞士深度遊記</a></li>
+                    <li><a href="https://www.amazon.com/s?k=hengsheng+cai&rh=n%3A154606011&ref=nb_sb_noss" target="_blank">美国Amazon网上书籍</a></li>
+                    <li><a href="https://www.amazon.co.jp/s?k=hengsheng+cai&rh=n%3A2275256051&ref=nb_sb_noss" target="_blank">日本Amazon网上书籍</a></li>
+                    <li><a href="https://www.amazon.co.uk/s?k=hengsheng+cai&crid=18LRCF137ZX15&sprefix=hengsheng+cai%2Caps%2C146&ref=nb_sb_noss" target="_blank">英国Amazon网上书籍</a></li>
+                    <li><a href="https://www.amazon.de/s?k=hengsheng+cai&crid=2RI6XXMYZVD6N&sprefix=hengsheng+cai%2Caps%2C155&ref=nb_sb_noss" target="_blank">德国Amazon网上书籍</a></li>
+                </ul>
+            </div>
+        </li>
+            <li class="hover-me"><a href="#">我的文章（一）</a><i class="fa fa-angle-right"></i>
+              <div class="sub-menu-2">
+                <ul>
+                  <li><a href="https://docs.zohopublic.com/file/pwyo75cdfc216a39b41c3ac66495194280edd" target="_blank">以“求是”精神，正本溯源，李约瑟访问浙大补录
+                  </a></li>
+                  <li><a href="https://docs.zohopublic.com/file/idbg044a636d00b8d4ee7a54301834fd9eb7c" target="_blank">忆自焚而亡的大学同学杨烨</a></li>
+                  <li><a href="https://docs.zohopublic.com/file/pwkrpeaed56378a8e4185b3a51f93b1adbbd7" target="_blank">一段塵封的台大光復的歷史和幾位重要人物</a></li>
+                  <li><a href="https://docs.zohopublic.com/file/3mdfbf71fe7e9310b4da5bd99cc39d38f4939" target="_blank">郑桐荪——中国数学界元老级的前辈</a></li>
+                  <li><a href="https://docs.zohopublic.com/file/pwyo76a97e6bae5d44ace95b88d82ca7df268" target="_blank">钱学森留下的珍贵精神遗产（《中关村回忆》中没收录）</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="hover-me"><a href="#">我的文章（二）</a><i class="fa fa-angle-right"></i>
+              <div class="sub-menu-2">
+                <ul>
+                  <li><a href="https://docs.zohopublic.com/file/fb1j3111823e69e3d484c9aee56742fed475e" target="_blank">关于南社
+                  </a></li>
+                  <li><a href="https://docs.zohopublic.com/file/bb5ewbb8d4d6ea3d24f719834ed4e8eddbb6b">百年南社系列文章</a></li>
+                  <li><a href="https://docs.zohopublic.com/file/bkfhu7086150e30f24756a99fb099f9e95924">兰臭图、樸学斋话酒图、东都谒庙图、秣陵悲秋图等文</a></li>
+                  <li><a href="https://docs.zohopublic.com/file/l5w5p4e427f862df54553891109c3eb1e6f5b" target="_blank">凭弔先烈和秋瑾的绝笔诗</a></li>
+                  <li><a href="https://docs.zohopublic.com/file/pwkrp9bd4db3ac0834376a5bfa32be9b7a1e0" target="_blank">南社和中国科学社</a></li>
+                  <li><a href="https://docs.zohopublic.com/file/fdmy5baf2d777e91f41d684e2ae1ac2443ba6" target="_blank">南社社员胡先骕的《水杉歌》和郑桐荪的《河清歌》</a></li>
+                  <li><a href="https://docs.zohopublic.com/file/fdmy52914cdcccce444b6a393109eec09f34e" target="_blank">看 CCTV-4  2011 走遍中国(苏州..剑胆琴心)有感</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="hover-me"><a href="#">我的论文</a><i class="fa fa-angle-right"></i>
+              <div class="sub-menu-2">
+                <ul>
+                  <li><a href="https://docs.zohopublic.com/file/idbg0ebdf338a789f469ab9b2009b2cf5a6f3" target="_blank">A Proposed Chinese Language Videotex and Teletext Standard</a></li>
+                  <li><a href="https://docs.zohopublic.com/file/idbg0820cfa5ac7094b4cb53b81481efe6506" target="_blank">A Survey of Various Chinese Ideographic Character Sets for Information Exchange</a></li>
+                  <li><a href="https://docs.zohopublic.com/file/idbg09cb4db2daa964d409b4c7dce8dc55d36" target="_blank">Extension of NAPLPS Videotex and Teletext Standard to the Chinese Language</a></li>
+                  <li><a href="https://docs.zohopublic.com/file/idbg0cee4e6e150b24a689ef9a3625ff31dc8" target="_blank">人工智能在中文电脑中的应用</a></li>
+                  <li><a href="https://docs.zohopublic.com/file/idbg0c7524d6a7ff34e0ebff3bac5443a1d69" target="_blank">1987年前我在国内的其他文章</a></li>
+                  <li><a href="https://docs.zohopublic.com/file/idbg062df4feb425a4742b2e638a196d422be" target="_blank">1987年前我的其他学术文章篇头</a></li>
+                  <li><a href="https://docs.zohopublic.com/file/8ulnq0492199df70f4a908f3d7fe48782a78c" target="_blank">1984-87年我在加拿大的工作</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="hover-me"><a href="#">其他</a><i class="fa fa-angle-right"></i>
+              <div class="sub-menu-2">
+                <ul>
+                   <li><a href="https://docs.zohopublic.com/file/2vpje7f15677d6463444cb5387a04b8ee4a0f" target="_blank">《易经》与科学（1985.6） 蔡恒息</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li><a href="#"><i class="fa fa-tv"></i>视频</a>
+        <div class="sub-menu-1">
+          <ul>
+            <li class="hover-me"><a href="#">视频1</a><i class="fa fa-angle-right"></i>
+              <div class="sub-menu-2">
+                <ul>
+                  <li><a href="https://docs.zohopublic.com/file/hltajbd862af13cc146b78786716e7ef53b37" target="_blank">蔡邦华院士诞辰110周年纪念册</a></li>
+                  <li><a href="https://caih1943.github.io/cai110.htm" target="_blank">蔡邦华院士诞辰110周年纪念活动视频</a></li>
+                  <li><a href="http://mp.weixin.qq.com/s?__biz=MjM5NDgxNTQwNQ==&mid=2650735394&idx=1&sn=350a17ca65ff15ee2a4ff9a9ce6c743b&chksm=be89afe089fe26f649141866bb9ebfcaccaa8c80a9b80d581947feb2b45a3f7791211ea93350&mpshare=1&scene=1&srcid=0929DD7612TzTQrQW7iBCt5g&sharer_sharetime=1569798608689&sharer_shareid=099c1c9e3b3b501499aa542a6dae32af#rd" target="_blank">震撼！开国大典上的10位浙大人！</a></li>
+                  <li><a href="https://docs.zohopublic.com/file/pwkrpb784fcafd0384c188385e7eed40fb5eb" target="_blank">蔡小麗画册</a></li>
+                </ul>
+              </div>
+            </li>
+           <li class="hover-me"><a href="#">视频2</a><i class="fa fa-angle-right"></i>
+              <div class="sub-menu-2">
+                <ul>
+                  <li><a href="https://caih1943.github.io/中国教育报道_先生回来展_10212012.mp4" target=" _blank">中国教育报道_先生回来展</a></li>
+                  <li><a href="https://www.youtube.com/watch?v=MrVOlkRaBEM" target=" _blank">Beautiful Hangzhou West Lake 杭州西湖</a></li>
+                </ul>
+              </div>
+            </li>
+           <li class="hover-me"><a href="#">视频3</a><i class="fa fa-angle-right"></i>
+              <div class="sub-menu-2">
+                <ul>
+                  <li><a href="https://docs.zohopublic.com/file/0dgq25f00bcf682d94f1c90b9132f16d9ae20" target=" _blank">20131207 腾飞中国 腾飞中国： 特楼 主人（一）</a></li>
+                  <li><a href="https://docs.zohopublic.com/file/0dgq2f2c8ed09cc6a4669a28e669cd88445f4" target=" _blank">20131207 腾飞中国 腾飞中国： 特楼 主人（二）</a></li>
+                  <li><a href="https://docs.zohopublic.com/file/0dgq2f4ce629974d94c1b8d7af299a4c9af13" target=" _blank">20131207 腾飞中国 腾飞中国： 特楼 主人（三）</a></li>
+                  <li><a href="https://docs.zohopublic.com/file/0dgq25d1ef3ab52344b788c346e3696f6a05b" target=" _blank">20131207 腾飞中国 腾飞中国： 特楼 主人（四）</a></li>
+                  <li><a href="https://docs.zohopublic.com/file/0dgq2c9499e96764a4e7f95ab7ef2d379d131" target=" _blank">20131207 腾飞中国 腾飞中国： 特楼 主人（五）</a></li>
+                  <li><a href="https://docs.zohopublic.com/file/0dgq2b9bd802e272543108f1cabcdc9a566e4" target=" _blank">20131207 腾飞中国 腾飞中国： 特楼 主人（六）</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="hover-me"><a href="#">PPS演示</a><i class="fa fa-angle-right"></i>
+              <div class="sub-menu-2">
+                <ul>
+                  <li><a href="https://docs.zohopublic.com/file/o8jty765760be1cba4b5cbb4aa2143b1e70f5" target=" _blank">《中关村回忆》中的老科学家</a></li>
+                  <li><a href="https://docs.zohopublic.com/file/4di8l8c742ee2533945988ff78a7c012140c3" target=" _blank">中关村老科学家第一集</a></li>
+                  <li><a href="https://docs.zohopublic.com/file/pwkrpba7ab74f089147c1afa27253aebf8ec7" target=" _blank">中关村老科学家第二集</a></li>
+                  <li><a href="https://docs.zohopublic.com/file/pwkrp0ad47b01286e4de3aac16a3087034eb2" target=" _blank">中关村老科学家第三集</a></li>
+                  <li><a href="https://docs.zohopublic.com/file/pwkrpa3d822f82fee449287ab3da8771018cd" target=" _blank">中关村老科学家第四集</a></li>
+                  <li><a href="https://docs.zohopublic.com/file/pwkrp75c8c0d268bf4cd68c7791bfe2aa3b0b" target=" _blank">中关村老科学家第五集</a></li>
+                  <li><a href="https://docs.zohopublic.com/file/pwkrpc03708a3986247afa4edb2a4053d7780" target=" _blank">叶企孙先生专集</a></li>
+                  <li><a href="https://docs.zohopublic.com/file/pwkrpbe24c462fc6c42ba991488e0884224bc" target=" _blank">中关村老科学家全集</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li><a href="#"><i class="fa fa-medkit"></i>健康</a>
+       <div class="sub-menu-1">
+        <ul>
+          <li class="hover-me"><a href="#">Covid-19</a><i class="fa fa-angle-right"></i>
+            <div class="sub-menu-2">
+              <ul>
+                <li><a href="https://www.youtube.com/channel/UC8I3-FAdFC-S9NyT204lTIw" target=" _blank">健康1+1</a></li>
+                <li><a href="https://covid19.who.int/table" target=" _blank">WHO Coronavirus (COVID-19) Dashboard</a></li>                
+                <li><a href="https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19.html?utm_campaign=not-applicable&utm_medium=vanity-url&utm_source=canada-ca_coronavirus" target=" _blank">COVID-19 in Canada</a></li>                
+                <li><a href="https://www.google.com/search?kgmid=/g/11j2cc_qll" target=" _blank">See more COVID-19 on Google</a></li>                
+                <li><a href="https://www.worldometers.info/coronavirus/" target=" _blank">全球COVID-19每日病例统计</a></li>                
+                <li><a href="https://superpyq.com/covid/ca/" target=" _blank">加拿大COVID-19每日病例统计</a></li>                
+                <li><a href="https://www.ottawapublichealth.ca/en/reports-research-and-statistics/daily-covid19-dashboard.aspx" target=" _blank">渥太华COVID-19每日病例统计</a></li>                
+              </ul>
+            </div>
+          </li>
+          <li class="hover-me"><a href="#">营养</a><i class="fa fa-angle-right"></i>
+            <div class="sub-menu-2">
+              <ul>
+                <li><a href="https://m.toutiao.com/i7042465317661966862/?tt_from=weixin_moments&utm_campaign=client_share&wxshare_count=1&share_type=original&timestamp=1639797806&app=news_article&utm_source=weixin_moments&utm_medium=toutiao_android&use_new_style=1&req_id=202112181123250101502152030B688535&group_id=7042465317661966862" target=" _blank">营养平衡</a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>                
+              </ul>
+            </div>
+          </li>
+          </li>
+          <li class="hover-me"><a href="#">联系人</a><i class="fa fa-angle-right"></i>
+            <div class="sub-menu-2">
+              <ul>
+                <li><a href="#">老蔡(613)8234197, </a></li>
+                <li><a href="#">caihengsheng
+                  @gmail.com</a></li>
+                <li><a href="#">蔡蕾(847)7705855,
+                lillyc@gmail.com</a></li>
+                <li><a href="#">Dr.Kenneth Orbeck(613)7387660</a></li>                
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+      </li>
+    </ul>
+  </div>
+  
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="https://ici.radio-canada.ca/rci/zh-hans/%E6%9C%80%E6%96%B0%E4%BF%A1%E6%81%AF" target="_blank"><i class="fa-regular fa-message"></i></i>&nbsp;最新信息</a><a href="https://www.bilibili.com/video/BV1DL411H7SV/" target="_blank"><i class="fa-brands fa-html5"></i>&nbsp;网页编程</a>
+    <a href="https://www.runoob.com/python/python-tutorial.html" target="_blank"><i class="fa-brands fa-python"></i>&nbsp;Python</a>
+    <a href="https://www.runoob.com/sql/sql-tutorial.html" target="_blank"><i class="fa-solid fa-database"></i>&nbsp;SQL</a>    
+    <a href="#"><i class="fas fa-address-card"></i>&nbsp;联系我们</a>
+  </div>
+<section>
+<div class="container">
+
+  <div class="slideshow">
+    <h1>世界城市画廊</h1>
+    <div class="content">
+      <div class="content-carrousel">
+        <figure class="shadow"><img src="images/C_186.png"></figure>
+        <figure class="shadow"><img src="images/amsterdam.jpg"></figure>
+        <figure class="shadow"><img src="images/beijing.jpg"></figure>
+        <figure class="shadow"><img src="images/Bolin.jpg"></figure>
+        <figure class="shadow"><img src="images/iceland.jpg"></figure>
+        <figure class="shadow"><img src="images/Paris.jpg"></figure>
+        <figure class="shadow"><img src="images/norway.jpg"></figure>
+        <figure class="shadow"><img src="images/washington.jpg"></figure>
+        <figure class="shadow"><img src="images/swedan.jpg"></figure>
+        <figure class="shadow"><img src="images/moscow.jpg"></figure>
+      </div>      
+    </div> 
+  </div> 
+    <div class="swiper">      
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <span class="swiper-slide"><a href="images/amsterdam.jpg" data-lightbox="mygallery" title="荷兰阿姆斯特丹">荷兰阿姆斯特丹</a><img src="images/amsterdam.jpg"</div>
+          </span>
+        <span class="swiper-slide"><a href="images/austria.jpg" data-lightbox="mygallery" title="奥地利哈尔施塔特">奥地利哈尔施塔特</a><img src="images/austria.jpg"</div>
+      </span>
+        <span class="swiper-slide"><a href="images/beijing.jpg" data-lightbox="mygallery" title="中国北京紫禁城">中国北京紫禁城</a><img src="images/beijing.jpg"</div>
+      </span>
+        <span class="swiper-slide"><a href="images/Bolin.jpg" data-lightbox="mygallery" title="德国柏林">德国柏林</a><img src="images/Bolin.jpg"</div>
+      </span>
+        <div class="swiper-slide"><a href="images/bore.jpg" data-lightbox="mygallery" title="瑞士伯尔尼">瑞士伯尔尼</a><img src="images/bore.jpg"</div>
+      </div>
+        <div class="swiper-slide"><a href="images/brazil.jpg" data-lightbox="mygallery" title="巴西里约热内卢">巴西里约热内卢</a><img src="images/brazil.jpg"</div>
+      </div>
+        <div class="swiper-slide"><a href="images/denmark.jpg" data-lightbox="mygallery" title="丹麦哥本哈根">丹麦哥本哈根</a><img src="images/denmark.jpg"</div>
+      </div>
+        <div class="swiper-slide"><a href="images/finland.jpg" data-lightbox="mygallery" title="芬兰赫尔辛基">芬兰赫尔辛基</a><img src="images/finland.jpg"</div>
+      </div>
+        <div class="swiper-slide"><a href="images/iceland.jpg" data-lightbox="mygallery" title="冰岛雷克雅未克">冰岛雷克雅未克</a><img src="images/iceland.jpg"  </div></div>
+        <div class="swiper-slide"><a href="images/india.jpg" data-lightbox="mygallery" title="印度泰姬陵">印度泰姬陵</a><img src="images/india.jpg"</div>
+      </div>
+        <div class="swiper-slide"><a href="images/London.jpg" data-lightbox="mygallery" title="英国伦敦">英国伦敦</a><img src="images/London.jpg"</div>
+      </div>
+        <div class="swiper-slide"><a href="images/moscow.jpg" data-lightbox="mygallery" title="俄罗斯莫斯科">俄罗斯莫斯科</a><img src="images/moscow.jpg">
+      </div>
+        <div class="swiper-slide"><a href="images/norway.jpg" data-lightbox="mygallery" title="挪威峡湾">挪威峡湾</a><img src="images/norway.jpg"</div>
+      </div>
+        <div class="swiper-slide"><a href="images/Ottawa.jpg" data-lightbox="mygallery" title="加拿大渥太华">加拿大渥太华</a><img src="images/Ottawa.jpg"</div>
+      </div>
+        <div class="swiper-slide"><a href="images/Paris.jpg" data-lightbox="mygallery" title="法国巴黎">法国巴黎</a><img src="images/Paris.jpg">
+       </div>
+        <div class="swiper-slide"><a href="images/Roma.jpg" data-lightbox="mygallery" title="意大利罗马">意大利罗马</a><img src="images/Roma.jpg"></div>
+        <div class="swiper-slide"><a href="images/s-africa.jpg" data-lightbox="mygallery" title="南非">南非</a><img src="images/s-africa.jpg"</div>
+      </div>
+        <div class="swiper-slide"><a href="images/swedan.jpg" data-lightbox="mygallery" title="瑞典斯德哥尔摩">瑞典斯德哥尔摩</a><img src="images/swedan.jpg">
+       </div>
+        <div class="swiper-slide"><a href="images/sydney.jpg" data-lightbox="mygallery" title="澳大利亚悉尼">澳大利亚悉尼</a><img src="images/sydney.jpg"></div>
+        <div class="swiper-slide"><a href="images/washington.jpg" data-lightbox="mygallery" title="美国华盛顿">美国华盛顿</a><img src="images/washington.jpg"
+       </div>    
+</section>
+<section>
+<div class="Video_sliders">
+    <h1>视频展示厅：</h1>
+    <h3>鼠标移到展示视频或手点该屏，显示控制按钮：‖ ▶ 停止或开始、静音或有声、现屏或全屏；按 ⁝ 可选其他功能。要观赏小图标视频,双击小图，弹出新页观看，关闭该页，可进行下一选择。
+    </h3>
+      <video id="slider" controls autoplay muted>
+        <source src="media/蔡小麗画册.mp4" type="video/mp4">
+      </video>
+    <ul class="navigation">
+      <li><button id="myBtn" onclick="alert('加拿大班芙和坎莫尔二周游 : 2019年8月应浙大西迁后人小竹邀请来到坎莫尔，度过了二周美好的时光，成了在疫情前最后的旅游绝唱。')"><a href="https://1drv.ms/v/s!Av-Jm_UNifOuhJB9vYElU0erT5vfxw?e=95kYGf"  target="_blank" title="加拿大班芙和坎莫尔游"><img src="media/pic1.jpg" >加国班芙</a></button></li>
+      <li><button id="myBtn" onclick="alert('北欧游轮10天游:紧接2013年8月5日~8月9日又作了一次北欧游轮10天游，历经丹麦哥本哈根、德国瓦尔内明德和柏林、爱沙尼亚的塔林、俄罗斯圣彼得堡、芬兰的赫尔辛基和瑞典斯德哥尔摩， 再回到哥本哈根。饱尝北欧风光，令人流连忘返！')"><a href="https://1drv.ms/v/s!Av-Jm_UNifOuhJBm1btJA0igM7vmTw?e=WVYWRY"  target="_blank" title="北欧游轮10天游" ><img src="media/Neuo.png">北欧游轮</a></button></li>
+      <li><button id="myBtn"  onclick="alert('挪威峡湾游:然后，在2013年8月5日~8月9日作了挪威峡湾游，惊险刺激，完成一次北欧行！')"><a href="https://1drv.ms/v/s!Av-Jm_UNifOuhJBujgZ6DeBlfRWnxQ?e=5GMR2t"  target="_blank" title="挪威峡湾游"><img src="media/norway.png">挪威峡湾</a></button></li>
+      <li><button id="myBtn" onclick="alert('北美西部游:2013年8月5日~8月9日作了一次北美西部游，饱尝北美风光，令人流连忘返！')"><a href="https://1drv.ms/v/s!Av-Jm_UNifOuhJBvGlEGOQ9n0MY-Hg?e=GLwwNW"  target="_blank" title="北美西部游"><img src="media/Nus.png">美国西部</a></button></li>
+      <li><button id="myBtn" onclick="alert('宝岛台湾环岛自由行1:2010年6月作了一次环岛台湾行。（第一部分）')"><a href="https://docs.zohopublic.com/file/pwkrp85e9cceaf67c41afa0ef8029cf7b33a3"  target="_blank" title="台湾环岛自由行（一）"><img src="media/pic3.png">台湾行I</a></button></li>
+      <li><button id="myBtn" onclick="alert('宝岛台湾环岛自由行2:2010年6月作了一次环岛台湾行。（第二部分）')"><a href="https://docs.zohopublic.com/file/pwkrp919f29fb48f04ebabdbd9ca72cb319a5"  target="_blank" title="台湾环岛自由行（二）"><img src="media/pic4.png">台湾行II</a></button></li>
+      <li><button id="myBtn" type="button" onclick="alert('云南昆明游：2010年8月应初中老同学李志广邀请来到昆明，和他们度过了一段美好的时光。')"><a href="https://1drv.ms/v/s!Av-Jm_UNifOuhJBwy8NBD2GoyJDZhA?e=agqcgq"  target="_blank" title="云南昆明游"><img src="media/kunming.png">云南昆明</a></button></li>
+      <li><button id="myBtn" onclick="alert('冰岛游:2013年7月24日~7月26日作了一次冰岛游，去了首都雷克雅未克、蓝湖温泉BlueLagon、参加金环旅游线路Goldon Ciecle，包括间歇热泉Geysir、黄金瀑布Gullfoss，令人印象深刻！')"><a href="https://1drv.ms/v/s!Av-Jm_UNifOuhJBnv63rNwS46SLIag?e=TNfpxf"  target="_blank" title="冰岛游"><img src="media/iceland.png">冰岛游</a></button></li>
+      <li><button id="myBtn" onclick="alert('意大利和法国南部游（1）: 2017年9月4日至9月20日作了意大利和法国南部行，度过了17天美好的时光，领略了意、法风情。')"><a href="https://1drv.ms/v/s!Av-Jm_UNifOuhJx9cKuqJ312olkNxA"  target="_blank" title="意、法国南部游（一）"><img src="media/Italy&S_France1.png">意法南I</a></button></li>
+      <li><button id="myBtn" onclick="alert('意大利和法国南部游（2）:2017年9月4日至9月20日作了意大利和法国南部行，度过了17天美好的时光，领略了意、法风情。')"><a href="https://1drv.ms/v/s!Av-Jm_UNifOuhJx-fS-Kl4EEgLNe7A?e=4t7dYH"  target="_blank" title="意、法国南部游（二）"><img src="media/Italy&S_France2.png">意法南II</a></button></li>
+      <li><button id="myBtn" onclick="alert('瑞士游2019（一）: 2019年5月28日至6月15日作了瑞士行，度过了二周美好的时光。')"><a href="https://1drv.ms/v/s!Av-Jm_UNifOuhJEBgRpggR0wZRNVJA?e=ply3Ub"  target="_blank" title="瑞士游（一）"><img src="media/swiss1.png">瑞士游I</a></button></li>
+      <li><button id="myBtn" onclick="alert('瑞士游2019（二）：2019年5月28日至6月15日作了瑞士行，度过了二周美好的时光。')"><a href="https://1drv.ms/v/s!Av-Jm_UNifOuhJEAkCk6ti0I_ne0Dw?e=oZLRqY"  target="_blank" title="瑞士游（二）"><img src="media/swiss2.png">瑞士游II</a></button></li>
+      <li><button id="myBtn" onclick="alert('瑞士游2019（三）：2019年5月28日至6月15日作了瑞士行，度过了二周美好的时光。')"><a href="https://1drv.ms/v/s!Av-Jm_UNifOuhJEClJ5UccKnwldcAg?e=DIKAMT"  target="_blank" title="瑞士游（三）"><img src="media/swiss3.png">瑞士游III</a></button></li>
+      <li><button id="myBtn" onclick="alert('日本东京游：2018年11月3日至8日来到日本东京，与神村（吴）政志、田培麗夫妇一起度过了美好的一周。')"><a href="https://1drv.ms/v/s!Av-Jm_UNifOuhJB161bvmtwnIs_Xbg?e=xkgdrj"  target="_blank" title="东京游"><img src="media/pic2.jpg">日东京游</a></button></li>
+    </ul>
+    </div>      
+  </section>     
+    
+      
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      backgroundColor="rgba(0,0,0,0,9)";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.body.style.backgroundColor = "white";
+    }
+    </script>
+  
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      autoplay:{
+        delay:3000,
+        disableOnInteraction: false,
+      },
+        // Optional parameters
+
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable:true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+</script>
+<script type="text/javascript">
+  function videoUrl(hmmmmmm){
+    document.getElementById("slider").src = hmmmmmm;
+  }
+  function alert(hmmmmmm){
+    document.getElementById("myBtn").src = hmmmmmm;
+  }
+</script>
+</body>
+</html>
