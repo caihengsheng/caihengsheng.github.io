@@ -25,7 +25,7 @@ body{
 .menu-bar a{
   display: inline-block;
   color: #f1f1f1;
-  padding: 16px;
+  padding: 10px;
   text-decoration: none;
   text-align:justify;
 }
@@ -74,7 +74,7 @@ h1{
   font-size: 50px;
   position: relative;
   text-align: center;
-  padding:10px; margin:200px; 
+  padding:8px; margin:200px; 
   margin: 30px 0 50px; 
 }
 
@@ -106,9 +106,10 @@ h1{
 
 .menu-bar ul li{
   flex:none;
-  width: 120px;
-  margin-left: 80px;
-  padding: 15px 5px 15px 15px;
+  width: 100px;
+  margin-left: 40px;
+  padding: 10px 5px 5px 10px;
+  position: relative; /* 添加相对定位 */
 }
 /*
 @media(max-width:1200px){
@@ -129,7 +130,7 @@ h1{
 
 .active, .menu-bar ul li:hover{
     background: #2bab0d;
-    border-radius: 3px;
+    border-radius: 5px;
 }
 
 .sub-menu-1{
@@ -140,27 +141,38 @@ h1{
 .sub-menu-1 ul li a{
   flex:none;
   width: 140px;
-  margin-left: -80px;
-  padding: 15px 5px 15px 15px;
+  margin-left: -40px;
+  padding: 5px 5px 15px 15px;
   border-bottom: 1px dotted #fff;
   border-top: 1px dotted #fff; 
 }
 
-.menu-bar ul li:hover .sub-menu-1{
+/* 修改这里，添加子菜单的过渡效果和填充空隙 */
+.menu-bar ul li:hover .sub-menu-1 {
   display: block;
   position: absolute;
   background: rgb(0,100,0);
-  margin-top: 15px;
+  margin-top: 5px; /* 减少与父菜单的距离 */
   margin-left: -10px;
+  padding-top: 10px; /* 添加顶部填充以消除空隙 */
+}
 
-
+/* 添加一个伪元素填充菜单与子菜单之间的空隙 */
+.menu-bar ul li:hover::after {
+  content: "";
+  position: absolute;
+  height: 20px; /* 确保填充区域足够高 */
+  width: 100%;
+  bottom: -15px;
+  left: 0;
+  z-index: 29; /* 低于子菜单但高于其他元素 */
 }
 
 .menu-bar ul li:hover .sub-menu-1 ul{
   display: block;
   margin: 10px;
-  /*border-top: 1px dotted #fff;
-  border-bottom: 1px dotted #fff;*/
+  border-top: 1px dotted #fff;
+  border-bottom: 1px dotted #fff;
 }
 
 .menu-bar ul li:hover .sub-menu-1 ul li{
@@ -201,12 +213,28 @@ h1{
    
 }
 
+/* 修改这里，添加二级子菜单过渡 */
 .hover-me:hover .sub-menu-2{
   position: absolute;
   display: block;
   margin-top: -40px;
   margin-left: 140px;
   background: rgba(0,100,0);
+}
+
+/* 添加二级子菜单的伪元素 */
+.hover-me{
+  position: relative;
+}
+
+.hover-me::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 20px; /* 确保填充区域足够宽 */
+  top: 0;
+  right: -20px; /* 向右延伸 */
+  z-index: 149; /* 低于二级子菜单但高于其他元素 */
 }
 
 .hover-me:hover .sub-menu-2 ul li a:hover{
@@ -442,5 +470,3 @@ video{
 section .navigation li img:hover{
   width: 90px;
 } */
-
-
