@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF查看器</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.min.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 20px; }
+        .pdf-container { width: 100%; max-width: 1000px; margin: 0 auto; }
+        .pdf-viewer { 
+            width: 100%; 
+            height: 800px; 
+            border: 1px solid #ccc; 
+            overflow: hidden;
+        }
+        .pdf-toolbar {
+            background-color: #f4f4f4;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .pdf-toolbar button {
+            padding: 8px 12px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-right: 5px;
+        }
+        .pdf-toolbar button:hover {
+            background-color: #0056b3;
+        }
+        .pdf-page-info {
+            margin: 0 15px;
+        }
+        .pdf-zoom-controls {
+            display: flex;
+            align-items: center;
+        }
+        .pdf-title {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        .pdf-error {
+            padding: 20px;
+            color: red;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="pdf-container">
+        <h1 class="pdf-title" id="pdf-title">PDF文档查看器</h1>
+        <div class="pdf-toolbar">
+            <div>
+                <button id="prev">上一页</button>
+                <button id="next">下一页</button>
+                <span class="pdf-page-info" id="page-info">页码: 0 / 0</span>
+            </div>
+            <div class="pdf-zoom-controls">
+                <button id="zoom-out">缩小</button>
+                <button id="zoom-in">放大</button>
+            </div>
+        </div>
+        <div class="pdf-viewer">
+            <canvas id="pdf-canvas"></canvas>
+            <div id="pdf-error" class="pdf-error" style="display: none;">
+                无法加载PDF文件。请确认文件路径正确且文件格式有效。
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 设置PDF.js的工作路径
+        pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.worker.min.js';
+
+        // 初始化变量
+        let pdfDoc = null;
+        let pageNum = 1;
+        let pageRendering = false;
+        let pageNumPending = null;
+        let scale = 1.5;
+        const canvas = document.getElementById('pdf-canvas');
+        const ctx = canvas.getContext('2d');
+        const errorDiv = document.getElementById('pdf-error');
+
+        // 从URL获取PDF文件路径参数
+        function getPDFFromURL() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const pdfFile = urlParams.get('file');
+            // 如果没有提供文件参数，返回默认PDF路径
+            return pdfFile || 'documents/default.pdf';
+        }
+
+        // 更新PDF标题
+        function updatePDFTitle(filename) {
+            const title = filename.split('/').pop().replace('.pdf', '');
+            document.getElementById('pdf-title').textContent = `查看文档: ${title}`;
+            document.title = `PDF查看器 - ${title}`;
+        }
+
+        // 加载PDF文档
+        function loadPDF(url) {
+            updatePDFTitle(url);
+            
+            pdfjsLib.getDocument(url).promise.then(function(pdf) {
+                pdfDoc = pdf;
+                document.getElementById('page-info').textContent = `页码: ${pageNum} / ${pdf.numPages}`;
+                renderPage(pageNum);
+                errorDiv.style.display = 'none';
+            }).catch(function(error) {
+                console.error('加载PDF时出错:', error);
+                errorDiv.style.display = 'block';
+                errorDiv.textContent = `无法加载PDF文件 "${url}"。请确认文件路径正确且文件格式有效。`;
+            });
+        }
+
+        // 渲染指定页面
+        function renderPage(num) {
+            pageRendering = true;
+            
+            pdfDoc.getPage(num).then(function(page) {
+                const viewport = page.getViewport({ scale: scale });
+                canvas.height = viewport.height;
+                canvas.width = viewport.width;
+
+                const renderContext = {
+                    canvasContext: ctx,
+                    viewport: viewport
+                };
+
+                page.render(renderContext).promise.then(function() {
+                    pageRendering = false;
+                    if (pageNumPending !== null) {
+                        renderPage(pageNumPending);
+                        pageNumPending = null;
+                    }
+                });
+
+                document.getElementById('page-info').textContent = `页码: ${num} / ${pdfDoc.numPages}`;
+            });
+        }
+
+        // 显示上一页
+        function showPrevPage() {
+            if (pageNum <= 1) return;
+            pageNum--;
+            queueRenderPage(pageNum);
+        }
+
+        // 显示下一页
+        function showNextPage() {
+            if (pageNum >= pdfDoc.numPages) return;
+            pageNum++;
+            queueRenderPage(pageNum);
+        }
+
+        // 将页面渲染添加到队列
+        function queueRenderPage(num) {
+            if (pageRendering) {
+                pageNumPending = num;
+            } else {
+                renderPage(num);
+            }
+        }
+
+        // 放大PDF
+        function zoomIn() {
+            scale += 0.2;
+            renderPage(pageNum);
+        }
+
+        // 缩小PDF
+        function zoomOut() {
+            if (scale <= 0.4) return;
+            scale -= 0.2;
+            renderPage(pageNum);
+        }
+
+        // 添加事件监听
+        document.getElementById('prev').addEventListener('click', showPrevPage);
+        document.getElementById('next').addEventListener('click', showNextPage);
+        document.getElementById('zoom-in').addEventListener('click', zoomIn);
+        document.getElementById('zoom-out').addEventListener('click', zoomOut);
+
+        // 键盘导航
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowRight' || e.key === ' ') {
+                showNextPage();
+            } else if (e.key === 'ArrowLeft') {
+                showPrevPage();
+            }
+        });
+
+        // 加载PDF文件
+        loadPDF(getPDFFromURL());
+    </script>
+</body>
+</html>
